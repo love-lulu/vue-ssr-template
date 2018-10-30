@@ -16,7 +16,7 @@ git clone https://github.com/love-lulu/vue-ssr-template.git
 npm install
 ```
 
-启动服务(http://localhost:8080)
+启动服务(http://localhost:3300/home)
 
 ```
 npm run dev
