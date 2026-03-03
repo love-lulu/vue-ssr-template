@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node /server/babel.js",
-    "prod": "yarn run build && yarn run start",
-    "dev": "nodemon NODE_ENV=development node ./server/babel.js",
-    "build": "yarn run build:client && yarn run build:server",
-    "build:client": "cross-env NODE_ENV=production webpack --config build/webpack.client.conf.js --colors --progress",
-    "build:server": "cross-env NODE_ENV=production webpack --config build/webpack.server.conf.js --colors --progress",
-    "analyz": "cross-env analyz_config_report=true yarn run build:client"
+    "start": "cross-env NODE_ENV=production node ./server/babel.js",
+    "prod": "npm run build && npm run start",
+    "dev": "cross-env NODE_ENV=development node ./server/babel.js",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "cross-env NODE_ENV=production webpack --config build/webpack.client.conf.js --progress",
+    "build:server": "cross-env NODE_ENV=production webpack --config build/webpack.server.conf.js --progress",
+    "analyz": "cross-env analyz_config_report=true npm run build:client"
   },
   "author": "",
   "license": "ISC",
